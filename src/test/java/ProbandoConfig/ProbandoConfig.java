@@ -1,6 +1,8 @@
 package ProbandoConfig;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 import utilities.GetProperties;
@@ -17,6 +19,8 @@ public class ProbandoConfig {
 
         WebDriver driver = new ChromeDriver();
         driver.get("http://www.google.com");
+        WebElement p = driver.findElement(By.id("input"));
+        p.;
         driver.close();
     }
 
